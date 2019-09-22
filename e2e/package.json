@@ -1,0 +1,26 @@
+{
+  "name": "qwicengineering-qa-assignment",
+  "version": "1.0.0",
+  "description": "qwicengineering/qa-assignment",
+  "scripts": {
+    "cypress:run": "../../node_modules/.bin/cypress run",
+    "cypress:open": "../../node_modules/.bin/cypress open",
+    "start": "node server.js --port 7072",
+    "dev": "../../node_modules/.bin/start-test 7072 cypress:open",
+    "generate_report": "npx mochawesome-merge --reportDir reports/default/ > reports/mochawesome-merge/output.json && npx marge reports/mochawesome-merge/output.json"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "cypress-multi-reporters": "^1.2.1",
+    "cypress": "3.4.1",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-report-generator": "^4.0.1",
+    "mochawesome-merge": "^2.0.1"
+  },
+  "author": "Murilo Machado",
+  "email": "murilo.paula.machado@gmail.com"
+}
