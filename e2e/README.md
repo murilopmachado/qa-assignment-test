@@ -7,7 +7,7 @@ Bellow some automations using Cypress focusing into more coverage with less scen
 | Name        | Details      | Example |
 | ------|-----|-----|
 | UI  	| Tests to verify if the components are correctly rendered and with the correct properties.	| Verify if "Search Button" it rendered and enabled from default |
-| Integration  	| Tests to verify the integration fron Back to Front in the case. Could be used to verify integration between different supplyers and Thirdpart softwares.	| Verify if "Brand Select" brings the options usgin the response from /cars endpoint. |
+| Integration  	| Tests to verify the integration from Back to Front in the case. Could be used to verify integration between different suppliers and Thirdpart softwares.	| Verify if "Brand Select" brings the options usgin the response from /cars endpoint. |
 | Functional	| Tests into a more human way. Using Gherkin in steps and applying BDD.	| Verify if it's possible to fill the form with valid data, click in Search and validate the alert. |
 | API	| Tests to check the API. Validate the response schema asserting the property of every key:value. And a few others verifications.	| Verify if Audi brands brings only Audi models and if it's repeats in another brand. |
 
