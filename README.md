@@ -2,7 +2,7 @@
 
 Bellow some automations using Cypress focusing into more coverage with less scenarios for qwicengineering/qa-assignment.
 
-###### Requirements:
+## Requirements:
 
  - NodeJS
    - https://nodejs.org/en/download/
@@ -11,40 +11,54 @@ Bellow some automations using Cypress focusing into more coverage with less scen
  - Cypress
    - https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
 
-##### Preparing and running QA-Assignment Application
+## Preparing and running QA-Assignment Application
 
-Download the project:
+#### Download the project:
+
+In order to run the application we'll need to clone the repository and install dependencies:
+
 ```
 git clone https://github.com/murilopmachado/qa-assignment-test
 ```
-Install Dependencies:
+
+Install dependencies:
+
 ```
 npm install
 ```
+
 Run application:
+
 ```
 npm start
 ```
 
-##### Preparing and running QA-Assginment E2E Tests
+## Preparing and running QA-Assginment E2E Tests
 
-Install Dependencies for tests
+With the application running we'll have to download the dependencies for tests, run and generate the report into HTML for further use. 
 
-Enter in e2e folder and run:
+To start navigate to qa-assignment-test/e2e and install dependencies:
+
 ```
 npm install
 ```
 Run tests:
+
 ```
 npx cypress run
 ```
+
 Generate reports:
+
 ```
 npm run generate_reports
 ```
 ![Screenshot](https://github.com/murilopmachado/qa-assignment-test/blob/master/e2e/images/generate_report.PNG)
-##### The report will be stored in mochawesome-report folder.
+
+
+The report will be stored in mochawesome-report folder.
 ![Screenshot](https://github.com/murilopmachado/qa-assignment-test/blob/master/e2e/images/report.PNG)
-##### It's possible to watch the videos from test runs inside cypress/videos folder aswell.
+
+It's possible to watch the videos from test runs inside cypress/videos folder aswell.
 ![Screenshot](https://github.com/murilopmachado/qa-assignment-test/blob/master/e2e/images/video_record.PNG)
 
